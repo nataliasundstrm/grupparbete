@@ -1,0 +1,19 @@
+:root {
+
+    /*
+    FONTS
+    sans-serif - utan fötter
+    serif - med fötter 
+    */
+
+    --font-sans-serif: 'Poppins', sans-serif; 
+    --font-serif: 'Roboto Serif', serif;
+
+    /* 
+    COLORS 
+    */
+    --color-blue: #11224D;
+    --color-green: #84BF9D;
+    --color-white: #FEFEFA;
+
+}
