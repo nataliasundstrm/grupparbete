@@ -1,6 +1,13 @@
 @import "basic-style.css";
 body{
     background-color: #FEFEFA;
+
+    /* 
+
+    RADERA EJ, ska demosterar en grej imorgon :)
+    
+    margin: 0;
+    padding: 0; */
 }
 header{
     border:1px solid #11224D;
@@ -20,7 +27,7 @@ header{
     padding: 0;
     grid-column:1/2;
 }
-li{
+.header__item {
     color: #FEFEFA;
     font-family: var(--font-serif);
     font-size: 20px;
@@ -29,7 +36,7 @@ li{
     margin: 45px 20px 0 10px;
     padding-left: 20px;
 }
-ul{
+.header__list {
     grid-column: 2/5;
     text-align: right;
     background-position: 100%;
@@ -37,3 +44,122 @@ ul{
 li:hover{
     color: #84BF9D;
 }
+
+.footer {
+    display: grid;
+    grid-template-columns: minmax(30px, 30px) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 30px);
+    background-color: var(--color-blue);
+    margin-top: 100px;
+    padding: 6rem 0 6rem 0;
+}
+
+.footer__inner {
+    grid-column: inner;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 3rem;
+}
+
+.footer__top {
+    grid-column: 1/4;
+
+}
+
+.footer__list {
+    grid-column: 4/6;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding-top: 1rem;
+}
+
+.footer__link {
+    padding-right: 0.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-family: var(--font-sans-serif);
+}
+
+.footer__link img {
+    padding-right: 0.5rem;
+
+}
+
+.footer__title,
+.footer__headline,
+.footer__text {
+    color: var(--color-white);
+    font-family: var(--font-serif);
+    margin: 0;
+    padding: 0;
+}
+
+.footer__headline,
+.footer__text {
+    line-height: 1.25;
+}
+
+.footer__title {
+    padding-bottom: 1rem;
+}
+
+.footer__headline {
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.footer__phone span {
+    display: block;
+}
+
+.footer__form {
+    grid-column: 6/13;
+    min-width: 300px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    min-width: 100%;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: var(--font-sans-serif);
+}
+
+label {
+    color: var(--color-white);
+    font-family: var(--font-sans-serif);
+}
+
+.footer__button {
+    width: 6rem;
+    height: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--color-white);
+    border: 0;
+    border-radius: 1rem;
+    color: var(--color-blue);
+    font-size: var(--font-size);
+    font-family: var(--font-sans-serif);
+}
+
+.footer__bottom {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-family: var(--font-sans-serif);
+
+}
+
+
+
+
+
