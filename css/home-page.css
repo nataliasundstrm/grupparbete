@@ -50,7 +50,7 @@ header{
 .aktiv{
     color: #84BF9D;
     text-decoration: none;
-    font-family: var(--font-serif); 
+    font-family: var(--font-sans-serif); 
 }
 
 .footer {
