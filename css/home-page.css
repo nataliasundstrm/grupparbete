@@ -73,7 +73,6 @@ header{
        Fontstil större?*/
     grid-template-columns: minmax(30px, 1fr) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 1fr);
     background-color: var(--color-blue);
-    margin-top: 100px;
     padding: 6rem 0 6rem 0;
 }
 
