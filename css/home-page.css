@@ -1,48 +1,56 @@
 @import "basic-style.css";
 body{
     background-color: #FEFEFA;
-
-    /* 
-
-    RADERA EJ, ska demosterar en grej imorgon :)
-    
     margin: 0;
-    padding: 0; */
+    padding: 0;
 }
 header{
     border:1px solid #11224D;
     background-color: #11224D;
-    border-radius: 8px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: minmax(30px, 1fr) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 1fr);
     height: 145px;
+}
+
+.header__inner {
+    grid-column: inner;
+    display: grid;
+    grid-auto-columns: repeat(4, 1fr);
 }
 
  h1{
     color: #FEFEFA;
     font-family: var(--font-serif);
-    font-size: 50px;
-    margin: 40px 0 0 30px;
-    padding: 0;
+    font-size: 40px;
     grid-column:1/2;
+    margin-top:40px;
 }
 .header__item {
-    color: #FEFEFA;
-    font-family: var(--font-serif);
-    font-size: 20px;
-    list-style-type: none;
     display: inline-block;
     margin: 45px 20px 0 10px;
     padding-left: 20px;
+    
+}
+.header-link{
+    color: #FEFEFA;
+    font-family: var(--font-serif); 
+    list-style-type: none;
+    text-decoration: none;
 }
 .header__list {
     grid-column: 2/5;
     text-align: right;
     background-position: 100%;
+    
+    
 }
-li:hover{
+ a:hover{ 
     color: #84BF9D;
+}
+.aktiv{
+    color: #84BF9D;
+    text-decoration: none;
+    font-family: var(--font-serif); 
 }
 
 .footer {
