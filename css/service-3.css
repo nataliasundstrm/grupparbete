@@ -89,13 +89,64 @@ button:hover {
     
 }
 
+.cta {
+    display: grid;
+    grid-template-columns: minmax(30px, 1fr) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 1fr);
+    background-size: cover;
+    background-position: center;
+}
+
+.cta__inner {
+    grid-column: inner;
+    /* height: 100vh;
+    max-width: 100%;
+    top: -145%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 998;
+    padding: 6rem 0 6rem 0;
+}
+
+.cta__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 999;
+    opacity: 1;
+}
+
+.cta__title {
+    font-family: var(--font-serif);
+    color: var(--color-blue);
+    font-size: 40px;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+.cta__button-1,
+.cta__button-2 {
+    margin: 0;
+    padding: 0;
+
+}
+/* .cta__button {
+    margin-right: 1rem;
+} */
+
+
 .about,
-.buy {
+.buy,
+.products {
     background-color: var(--color-white);
 }
 
 .about__title,
-.buy__title {
+.buy__title,
+.products__title {
     margin: 0;
     padding: 0 0 1rem 0;
     color: var(--color-blue);
@@ -103,35 +154,49 @@ button:hover {
 }
 
 .about__text,
-.buy__text {
+.buy__text,
+.products__text {
     font-family: var(--font-sans-serif);
     color: var(--color-blue);
     margin: 0;
     padding: 0;
 }
 
-.about {
+.about,
+.products {
     display: grid;
     grid-template-columns: minmax(30px, 1fr) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 1fr);
-    padding: 6rem 0 6rem 0;
 }
 
-.about__inner {
+.about {
+    padding: 6rem 0 6rem 0;
+
+}
+
+.about__inner,
+.products__inner {
     grid-column: inner;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
 
-.about__content {
+.about__content,
+.products__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.about__img img {
+.about__img img,
+.products__img img {
     width: 100%;
     border-radius: 0.5rem;
+}
+
+.products {
+    margin: 0;
+    padding-bottom: 6rem;
 }
 
 figure {
@@ -143,6 +208,7 @@ figure {
     display: grid;
     grid-template-columns:  minmax(30px, 1fr) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 1fr);
     padding-bottom: 6rem;
+    background-color: var(--color-white);
 }
 
 .buy__inner {
@@ -150,23 +216,25 @@ figure {
 }
 
 .buy__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-.buy p {
-    text-align: center;
+.buy__title {
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+.buy__text {
+    font-weight: 500;
 }
 
 .form {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
-    padding: 3rem;
-    background-color: var(--color-white);
+    margin-top: 2rem;
 }
 
 .form__inner {
@@ -179,11 +247,11 @@ figure {
   .email__inner,
   .phone__inner,
   .square-meter__inner,
-  .ort__inner {
+  .address__inner {
     margin-bottom: 1rem;
   }
 
-  form label {
+  .form label {
     display: block;
     font-weight: 500;
     font-size: 1rem;
@@ -193,8 +261,8 @@ figure {
   }
 
   
-  form input[type="text"],
-  form input[type="email"],
+  .form input[type="text"],
+  .form input[type="email"],
   input[type="phonenumber"],
   input[type="number"] {
     width: 100%;
@@ -202,6 +270,10 @@ figure {
     border-radius: 0.5rem;
     border: 0;
     background-color: var(--color-blue);
+    color: var(--color-white);
+  }
+
+  .form ::placeholder {
     color: var(--color-white);
   }
 
@@ -216,12 +288,19 @@ figure {
   .email,
   .phone,
   .square-meter,
-  .ort {
+  .address {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     width: 100%;
 
   }
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .button__inner {
     background-color: var(--color-blue);
@@ -316,6 +395,11 @@ figure {
     max-width: 450px;
 }
 
+label {
+    color: var(--color-white);
+    font-family: var(--font-sans-serif);
+}
+
 footer input[type="text"],
 footer input[type="email"],
 select,
@@ -331,10 +415,10 @@ textarea {
     background-color: var(--color-white);
 } 
 
-label {
-    color: var(--color-white);
-    font-family: var(--font-sans-serif);
-}
+.footer__form ::placeholder {
+    color: var(--color-blue);
+  }
+
 
 /* COPYRIGHT */
 .footer__bottom {
@@ -356,7 +440,7 @@ label {
   .email,
   .phone,
   .square-meter,
-  .ort {
+  .address {
     width: 50%;
   }
 }
