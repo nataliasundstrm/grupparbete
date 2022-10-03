@@ -75,6 +75,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
 .image1,
@@ -82,7 +83,7 @@ header{
 .image3,
 .image4 {
     height: 400px;
-    width: 400px;
+    width: 100%;
 
 }
 
