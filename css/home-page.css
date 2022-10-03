@@ -66,6 +66,26 @@ header{
 
 }
 
+.section-title {
+    color: #11224D;
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+    height: 400px;
+    width: 400px;
+
+}
+
 .footer {
     display: grid;
     
