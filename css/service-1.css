@@ -67,34 +67,107 @@ header{
     position: absolute;
 
 }
-
+/* MIN SIDA */
 .main-container{
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(8,1fr);
-    border-bottom: 1px solid var(--color-blue);
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(4,1fr);
+    
+    /* border-bottom: 1px solid var(--color-blue); */
 }
+
+.main-content {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-h1{
     color: var(--color-blue);
     font-family: var(--font-serif);
-    grid-column: 6 /span 8;
     font-size: 55px;
-}
-.main-text{
-    color: var(--color-blue);
-    font-family: var(--font-sans-serif);
-    grid-column: 4 /span 6;
-    margin: 0;
     text-align: center;
     
+    
 }
-.main-img{
-    width: 967px;
-    grid-column: 3 /span 12;
-    grid-row: 3 /span 6;
-    border-radius: 10px;
+ .main-text{
+    color: var(--color-blue);
+    font-family: var(--font-sans-serif);
+    text-align: center;
+    place-items: center stretch;
+    
+} 
+img-list{
+    display: grid;
 }
 
+.main-img,
+.main-img1,
+.main-img2,
+.main-img3,
+.main-img4{
+    height: 100%;
+    width: 100%;
+
+    
+}
+.img{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    column-gap: 2%;
+   
+}
+.img-1{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.img-2{
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.img-3{
+    grid-column-start: 7;
+    grid-column-end: 9;
+}
+.img-4{
+    grid-column-start: 9;
+    grid-column-end: 11;
+}
+/*
+.main-img1{
+    height: 200px;
+    width: 300px;
+    
+}
+.main-img2{
+    height: 200px;
+    width: 300px;
+    
+}
+.main-img3{
+    height: 200px;
+    width: 300px;
+    
+}
+.main-img4{
+    height: 200px;
+    width: 300px;
+    
+}
+/* .content{
+    display: flex;
+    height: 500px;
+}
+.content-h1{
+    color: var(--color-blue);
+    font-family: var(--font-serif);
+}
+.content-h1-2{
+    color: var(--color-blue);
+    font-family: var(--font-serif);
+} */
 
 
 /* FOOTER START*/
