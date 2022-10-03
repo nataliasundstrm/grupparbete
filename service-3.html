@@ -47,24 +47,23 @@
             </div>
         </header>
 
-        <section class="cta" style="background-image: url(assets/img/foretagsstad-3.jpg)">
-            <div class="cta__inner" >
-                <div class="cta__content">
-                    <h1 class="cta__title">Företagsstäd hos <br> NordCleaning</h1>
-                    <div class="button cta__button">
-                        <!-- <button class="button__inner cta__button cta__button-1">Läs mer</button> -->
-                        <button class="button__inner cta__buttton cta__button-2">Få offert</button>
+        <div class="cta__background">
+            <section class="cta" style="background-image: url(assets/img/foretagsstad-3.jpg)">
+                <div class="cta__inner" >
+                    <div class="cta__content">
+                        <h1 class="cta__title">Boka företagsstäd<br>hos oss idag</h1>
+                        
+                        <a class="cta-button" href="#buy">Få offert</a>
                     </div>
-                    
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <section class="about">
             <div class="about__inner">
 
                 <figure class="about__img">
-                    <img src="assets/img/foretagsstad-3.jpg" alt="">
+                    <img src="assets/img/foretagsstad-4.jpg" alt="">
                 </figure>
 
                 <div class="about__content">
@@ -79,8 +78,6 @@
 
         <section class="products">
             <div class="products__inner">
-
-                
                 <div class="products__content">
                     <h1 class="products__title">Vi städar med miljövänliga produkter</h1>
                     <p class="products__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum iusto minus atque iste ea minima officia, voluptate saepe quo dolore quisquam expedita incidunt ad omnis fugiat, cupiditate at vero quasi.
@@ -88,35 +85,48 @@
                     </div>
 
                     <figure class="products__img">
-                        <img src="assets/img/foretagsstad-3.jpg" alt="">
+                        <img src="assets/img/foretagsstad-6.jpg" alt="">
                     </figure>
                 </div>
         </section>
         
-        <section class="buy">
+        <section class="buy" id="buy">
             <div class="buy__inner">
                 <div class="buy__content">
                     <h1 class="buy__title">Få en offert</h1>
                     <p class="buy__text">Vi på NordCleaning ger er ett prisförslag inom 24h.<br>
-                    Observera att alla fält måste fyllas i.</p>
+                    Observera att alla fält med en <span class="buy__required">*</span> måste fyllas i.</p>
                 </div>
 
                 <div class="form">
                     <div class="form__inner">
                       <form action="" method="POST">
+
+                        <div class="form__box-3">
+                            <!-- För- och efternamn -->
+                            <div class="company">
+                                <div class="company__inner">
+                                  <label for="company">Företag <span class="buy__required">*</span></label>
+                                  <input type="text" name="company" id="company" placeholder="Ert företag..." required>
+                                </div>
+                            </div>
+                            
+                            <!-- För- och efternamn -->
+                            <div class="name">
+                                <div class="name__inner">
+                                  <label for="name">kontaktperson</label>
+                                  <input type="text" name="name" id="name" placeholder="Er kontaktperson..." required>
+                                </div>
+                            </div>
+
+                        </div>
             
-                          <!-- För- och efternamn -->
-                          <div class="name">
-                            <label for="name">Företag</label>
-                            <input type="text" name="name" id="name" placeholder="Ert företag..." required>
-                          </div>
-                          
                         <!-- E-post och telefonummer-->
                         <div class="form__box-1">
                           <div class="email">
                   
                             <div class="email__inner">
-                              <label for="email">E-post</label>
+                              <label for="email">E-post <span class="buy__required">*</span></label>
                               <input type="email" name="email" id="email" placeholder="Er e-post..." required>
                             </div>
                   
@@ -124,7 +134,7 @@
                   
                           <div class="phone">
                             <div class="phone__inner">
-                              <label for="phonenumber">Telefonnummer</label>
+                              <label for="phonenumber">Telefonnummer <span class="buy__required">*</span></label>
                               <input type="phonenumber" name="phonenumber" id="phonenumber" placeholder="Ert telefonnummer..." required>
                             </div>
                           </div>
@@ -133,27 +143,36 @@
             
                         <!-- Bostad (KVM) och ort -->
                         <div class="form__box-2">
-            
-                          <div class="square-meter">
-                            <div class="square-meter__inner">
-                              <label for="number">Städyta i KVM</label>
+                   
+                          <div class="ort">
+                              <div class="ort__inner">
+                                  <label for="ort">Ort i Stockholm<span class="buy__required">*</span></label>
+                                  <input type="text" name="ort" id="ort" placeholder="Ort i Stockholm..." required>
+                                </div>
+                            </div>
+
+                          <div class="address">
+                              <div class="address__inner">
+                                  <label for="address">Adress <span class="buy__required">*</span></label>
+                                  <input type="text" name="address" id="address" placeholder="Er adress..." required>
+                                </div>
+                            </div>
+   
+                        </div>
+
+                            <div class="square-meter">
+                              <label for="number">Städyta i KVM <span class="buy__required">*</span></label>
                               <input type="number" name="number" id="number" placeholder="Städyta i KVM..." required>
                             </div>
-                          </div>
-            
-                          <div class="address">
-                            <div class="address__inner">
-                              <label for="address">Adress</label>
-                              <input type="text" name="address" id="address" placeholder="Er adress..." required>
-                            </div>
-                          </div>
-            
+
+
+                        <div class="comment">
+                            <label for="comment">Service</label>
+                            <textarea name="comment" id="comment" rows="6" placeholder="Vad behöver ni hjälp med?"></textarea>
                         </div>
                 
                         <!-- Knapp -->
-                        <div class="button">
-                            <button class="button__inner">Skicka</button>
-                        </div>
+                        <button href="" class="button form__button">Skicka</button>
                         
                       </form>
                     </div>
@@ -195,7 +214,7 @@
                      <li class="footer__item">
                          <a href="" class="footer__link">
                              <img src="assets/icons/instagram-small.svg" alt="">
-                             instgram
+                             instagram
                          </a>
                      </li>
  
@@ -227,7 +246,7 @@
                     <label for="textarea">Fråga oss</label>
                     <textarea name="textarea" id="textarea" rows="6" placeholder="Din fråga..." required></textarea>
 
-                    <button class="footer__button">Skicka</button>
+                    <button href="" class="button footer__button">Skicka</button>
 
                 </form>
            </div>
