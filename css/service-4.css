@@ -63,8 +63,9 @@ header{
     bottom: 0;
     background: #84BF9D;
     position: absolute;
-
 }
+
+/* Case */
 
 #case1 {
     background: url(../assets/img/dodsbo.jpg) no-repeat center center/cover;
@@ -83,6 +84,8 @@ color:#84BF9D;
 #case1 .case-content h2{
     color:#11224D;
     }
+
+/* Case end */
 
 .button {
     display: inline-block;
@@ -107,32 +110,71 @@ color:#84BF9D;
 .button2:hover {
     background-color: #11224D;
 }
+/* Sidebar */
+
 .background-sidebar {
-    background: #FEFEFA;
+    background: #11224D;
     color: #84BF9D;
 }
 
 #sidebar-info {
-    height: 600px;
+    height: 300px;
 }
 
 #sidebar-info .image-info {
     float: left;
     width: 50%;
-    background: url(../assets/img/sanering2.jpg) no-repeat;
+    background: url(../assets/img/sanering3.png) no-repeat;
     height: 100%;
 }
 #sidebar-info .content-info  {
     float: right;
     height: 100%;
     text-align: center;
-    padding: 30px 30px;
+    padding: 60px 30px;
     overflow: hidden;
 }
 
 #sidebar-info .content-info {
     padding-bottom: 20px;
 }
+
+/* Sidebar end */
+
+/* Sektion */
+
+.background-section {
+    background: #FEFEFA;
+    color: #11224D;
+}
+
+#section-info {
+    height: 300px;
+}
+
+#section-info .image-info {
+    float: left;
+    width: 50%;
+    background: url(../assets/img/sanering3.png) no-repeat;
+    height: 100%;
+}
+#section-info .content-info  {
+    float: right;
+    height: 100%;
+    text-align: center center;
+    padding: 60px 30px;
+    margin: 50px 50px;
+    overflow: hidden;
+}
+
+#section-info .content-info {
+    padding-bottom: 20px;
+}
+
+/* Sektion end */
+
+
+
 
 .footer {
     display: grid;
