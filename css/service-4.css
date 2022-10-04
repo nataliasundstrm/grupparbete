@@ -84,7 +84,7 @@ color:#84BF9D;
     color:#11224D;
     }
 
-.butten {
+.button {
     display: inline-block;
     font-size: 20px;
     color: #FEFEFA;
@@ -93,6 +93,45 @@ color:#84BF9D;
     border: none;
     cursor: pointer;
     border-radius: 30px;
+}
+
+.button2 {
+    display: inline-block;
+    font-size: 20px;
+    color: #FEFEFA;
+    background-color: #84BF9D;
+    padding: 20px 15px;
+    border: none;
+    
+}
+.button2:hover {
+    background-color: #11224D;
+}
+.background-sidebar {
+    background: #FEFEFA;
+    color: #84BF9D;
+}
+
+#sidebar-info {
+    height: 600px;
+}
+
+#sidebar-info .image-info {
+    float: left;
+    width: 50%;
+    background: url(../assets/img/sanering2.jpg) no-repeat;
+    height: 100%;
+}
+#sidebar-info .content-info  {
+    float: right;
+    height: 100%;
+    text-align: center;
+    padding: 30px 30px;
+    overflow: hidden;
+}
+
+#sidebar-info .content-info {
+    padding-bottom: 20px;
 }
 
 .footer {
