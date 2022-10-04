@@ -66,10 +66,34 @@ header{
 
 }
 
+#case1 {
+    background: url(../assets/img/dodsbo.jpg) no-repeat center center/cover;
+    height: 750px;
+}
 
+#case1 .case-content {
+    color: #11224D;
+    text-align: center;
+    padding-top: 100px;
+}
+#case1 .case-content h1{
+color:#84BF9D;
+}
 
+#case1 .case-content h2{
+    color:#11224D;
+    }
 
-
+.butten {
+    display: inline-block;
+    font-size: 20px;
+    color: #FEFEFA;
+    background-color: #11224D;
+    padding: 30px 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
 
 .footer {
     display: grid;
