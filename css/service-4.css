@@ -117,21 +117,30 @@ color:#84BF9D;
     color: #84BF9D;
 }
 
-#sidebar-info {
-    height: 300px;
-}
-
+/*
 #sidebar-info .image-info {
     float: left;
     width: 50%;
     background: url(../assets/img/sanering3.png) no-repeat;
     height: 100%;
+}*/
+
+#sidebar-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 300px;
 }
+
+.sanering3 {
+    width: 110%;
+    height: 100%;
+}
+
 #sidebar-info .content-info  {
-    float: right;
+    padding-top: 50px;
     height: 100%;
     text-align: center;
-    padding: 60px 30px;
     overflow: hidden;
 }
 
@@ -149,27 +158,34 @@ color:#84BF9D;
 }
 
 #section-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     height: 300px;
 }
 
+.sanering4{
+    width: 230%;
+    height: 100%;
+}
+
+/*
 #section-info .image-info {
     float: left;
     width: 50%;
     background: url(../assets/img/sanering4.png) no-repeat;
     height: 100%;
-}
-#section-info .content-info  {
-    float: right;
+}*/
+#section-info .section-info  {
+    padding-top: 50px;
     height: 100%;
-    text-align: center center;
-    padding: 60px 30px;
-    margin: 50px 50px;
+    text-align: center;
     overflow: hidden;
 }
-
+/*
 #section-info .content-info {
     padding-bottom: 20px;
-}
+}*/
 
 /* Sektion end */
 
@@ -183,7 +199,6 @@ color:#84BF9D;
        Fontstil större?*/
     grid-template-columns: minmax(30px, 1fr) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 1fr);
     background-color: var(--color-blue);
-    margin-top: 100px;
     padding: 6rem 0 6rem 0;
 }
 
