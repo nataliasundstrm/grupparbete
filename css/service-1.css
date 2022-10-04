@@ -67,12 +67,11 @@ header{
     position: absolute;
 
 }
+/* HEADER MOBILVERSION */
+
+    
+
 /* MIN SIDA */
-.main-container{
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(2,1fr);
-}
 
 .main-content {
     grid-column: 1/-1;
@@ -82,6 +81,7 @@ header{
     align-content: center;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    
     
 }
 
@@ -99,56 +99,93 @@ header{
     text-align: center;
     justify-content: center;
     width: 800px;
-    
-    
+    display: flex;
+    flex-flow: wrap;
 } 
-
+/* MOBILVERSION */
+@media screen and (max-width:768px){
+   
+    .main-content{
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1%;
+}
 
 .main-img,
 .main-img1,
 .main-img2,
-.main-img3,
-.main-img4{
-    height: 200px;
+.main-img3{
+    height: 250px;
     width: 100%;
-
+    
     
 }
 .img{
     grid-column-start: 1;
-    grid-column-end: 3;
-    column-gap: 2%;
-   
+    grid-column-end: 4;
+    
 }
 .img-1{
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    
 }
 .img-2{
-    grid-column-start: 5;
-    grid-column-end: 7;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    
 }
 .img-3{
-    grid-column-start: 7;
-    grid-column-end: 9;
+    grid-column-start: 10;
+    grid-column-end: 13;
+    
 }
-.img-4{
+/* .img-4{
     grid-column-start: 9;
     grid-column-end: 11;
-}
+} */
 .bgimage img{
     z-index: -999;
     position: absolute;
     width: 100%;
+    padding-top: 100px;
+    grid-column-start: 1;
+    grid-column-end: 11;
+
     
+}
+/* MOBILVERSION */
+@media screen and (max-width:768px) {
+    .main-container{
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+    }
+    .main-img{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .main-img1,
+    .main-img2,
+    .main-img3,
+    .main-img4{
+        display: none;
+    }
 }
 /* PRISLISTA */
 .price-content{
-    /* background-color: var(--color-white); */
     border-radius: 8px;
-    /* margin: 0 0 40px 20px; */
     height: 680px;
     width: 500px;
+
     display: grid;
     grid-area: price;
     justify-self: end;
@@ -186,14 +223,12 @@ header{
     opacity: 0.5;
 }
 .price-form{
-    background-image: url(service1bg.jpg);
     display: grid;
     grid-template-areas: 
     "price . form ";
 }
 /* FORMULÄR */
 .form-content{
-    /* background-color: var(--color-white); */
     border-radius: 8px;
     height: 700px; 
     width: 500px;
@@ -222,7 +257,9 @@ input[type=submit]{
     border-radius: 8px;
     width: 100px;
     border: none;
+    cursor: pointer;
 }
+
 
 
 
