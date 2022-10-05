@@ -33,7 +33,7 @@ header{
 }
 .header-link{
     color: #FEFEFA;
-    font-family: var(--font-serif); 
+    font-family: var(--font-sans-serif); 
     list-style-type: none;
     text-decoration: none;
 }
