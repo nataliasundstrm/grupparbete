@@ -18,12 +18,20 @@
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FEFEFA;
+    font-size: 16px;
+}
+
 body,
 img {
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-size: 16px;
-}
