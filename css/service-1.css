@@ -101,7 +101,7 @@ place-items: center;
 .main-img1,
 .main-img2,
 .main-img3{
-    width: 360px;
+    width: 100%;
     height: 100%;
     border-radius: 20px;
     margin: 0 10px 0 10px;
@@ -142,19 +142,18 @@ place-items: center;
 }
 .content-text{
     grid-column: 1/2;
-    min-height: 450px;
-    min-width: 300px;
+    min-height: 400px;
     border: 2px solid var(--color-green);
-    padding: 30px;
-    margin: 80px;
+    padding: 20px;
+    margin: 20px;
     border-radius: 20px;
     
 }
 .content-text2{
     grid-column: 2/3;
     min-width: 450px;
-    padding: 40px;
-    margin: 30px;
+    padding: 20px;
+    margin: 20px;
     border: 2px solid var(--color-green);
     border-radius: 20px;
     place-self: center;
@@ -174,10 +173,12 @@ place-items: center;
 
 /* PRISLISTA */
 .price-content{
-    min-height: 450px;
-    max-width: 450px;
+    min-height: 400px;
+    /* min-width: 300px; max-width: 450px; */
     grid-column: 1/2;
-    padding: 10px;
+    /* padding: 10px; */
+    /* margin: 20px; */
+    
     
     
 }
@@ -185,7 +186,7 @@ place-items: center;
     color: var(--color-white);
     font-family: var(--font-serif);
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
 
 }
 .price-opt {
@@ -199,6 +200,7 @@ place-items: center;
     color: var(--color-white);
     font-family: var(--font-sans-serif);
     margin-left: 20px;
+    
 }
 .price-p {
     font-size: 13px;
@@ -214,17 +216,17 @@ place-items: center;
 /* FORMULÄR */
 .form-content{
     border-radius: 20px;
-    min-height: 300px; 
+    min-height: 400px; 
     margin:0 auto;
     grid-column: 2/3;
-    min-width: 450px;
+    min-width: 500px;
 }
 .form-head{
     color: var(--color-white);
     font-family: var(--font-serif);
     margin-left: 10px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     
 }
 
@@ -402,21 +404,21 @@ label {
     .main-text{
         display: none;
     }
+    .main-img,
     .main-img1,
     .main-img2,
     .main-img3{
         display: none;
     }
-    .main-img{
-        min-width: 360px;
-        
-        /* place-content: center; */
-    }
+    
     .content-text2{
         display: none;
     }
     .content-text{
-        margin: 10px;
+        margin: 0 10px 20px 10px;
+        min-width: 300px;
+        text-align: center;
+        
     }
     .bgimage img{
         display: none;
@@ -426,37 +428,36 @@ label {
     }
     .price-content{
         border: 2px solid var(--color-green);
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
+        margin: 0 10px 20px 10px;
         border-radius: 20px;
-        max-width: 450px;
+        min-width: 331px;
+        padding: 5px;
+        
     }
     .form-head,
     .form-item{
         color: var(--color-white);
-        
+        display: flex;
+        flex-wrap: wrap;
     }
     .form-item{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .form-head{
-       text-align: center;
+        min-width: 60%;
     }
     .form-content{
         background-color: var(--color-green);
-        padding: 5px;
-        margin-bottom: 20px;
-        min-width: 10px;
+        padding: 2px;
+        /* margin-bottom: 20px; */
+        margin: 0 10px 20px 10px;
         grid-template-columns: none;
+        min-width:331px;
     }
     .price-opt,
     .price-h1,
     .price-ul{
         color: var(--color-blue);
     }
-    .price-p{
-        margin: 0 0 0 40px;
-    }
+
 
 }  
 
