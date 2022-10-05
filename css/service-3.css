@@ -62,8 +62,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* display: grid; */
-    /* grid-auto-columns: repeat(4, 1fr); */
 }
 
 .header__title {
@@ -71,12 +69,10 @@
     font-family: var(--font-serif);
     font-size: 40px;
     grid-column:1/2;
-    /* margin-top:40px; */
 }
 
 .header__item {
     display: inline-block;
-    /* margin: 45px 20px 0 10px; */
     padding-left: 2rem;
     
 }
@@ -89,7 +85,6 @@
 }
 
 .header__list {
-    /* grid-column: 2/5; */
     text-align: right;
     background-position: 100%;    
 }

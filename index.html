@@ -18,14 +18,19 @@
 </head>
 <body>
     <div id="container">
-        <header>
+
+        <header class="header">
             <div class="header__inner">
-                <h1>NordCleaning</h1>
+                <h1 class="header__title">NordCleaning</h1>
+
+                <button class="menu-button">
+                    <div class="menu-button__hamburger"></div>
+                </button>
                 
                     <ul class="header__list">
 
                         <li class="header__item">
-                            <a class="aktiv" class="header-link" href="home-page.html">Hem</a>
+                            <a class="header-link activ" href="home-page.html">Hem</a>
                         </li>
 
                         <li class="header__item">
@@ -41,7 +46,7 @@
                         </li>
                     
                         <li class="header__item">
-                            <a class="header-link" href="service-4.html">Dödsbo och sanering</a>
+                            <a class="header-link" href="service-4.html">Dödsbo & sanering</a>
                         </li>
                     </ul>
             </div>
@@ -62,84 +67,89 @@
 
 
 
-        <footer class="footer">
-            <div class="footer__inner">
-
-                <div class="footer__contact">
-                    <h2 class="footer__title">Kontakt</h2>
-
-                    <div class="footer__adress">
-                        <h4 class="footer__headline">Adress</h4>
-                        <p class="footer__text">NordCleaning<br>Sjöbersvägen 8<br>18443 Åkersberga</p>
+            <footer class="footer">
+                <div class="footer__inner">
+    
+                    <div class="footer__contact">
+                        <h2 class="footer__title">Kontakt</h2>
+    
+                        <div class="footer__adress">
+                            <h4 class="footer__headline">Adress</h4>
+                            <p class="footer__text">NordCleaning<br>Sjöbersvägen 8<br>18443 Åkersberga</p>
+                        </div>
+    
+                        <div class="footer__phone">
+                            <h4 class="footer__headline">Telefonnummer</h5>
+                            <span class="footer__text">09:00-16:45</span>
+                            <a href="" class="footer__phone">0705-207 845</a>
+                        </div>
+    
+                        <div class="footer__email">
+                            <h4 class="footer__headline">E-post</h4>
+                            <a href="" class="footer__email">nordcleaning@info.se</a>
+                        </div>   
                     </div>
-
-                    <div class="footer__phone">
-                        <h4 class="footer__headline">Telefonnummer</h5>
-                        <span class="footer__text">09:00-16:45</span>
-                        <a href="" class="footer__link">0705-207 845</a>
-                    </div>
-
-                    <div class="footer__email">
-                        <h4 class="footer__headline">E-post</h4>
-                        <a href="" class="footer__link">nordcleaning@info.se</a>
-                    </div>   
-                </div>
-
-                <ul class="footer__list">
-                     <li class="footer__item">
-                         <a href="" class="footer__link">
-                             <img src="assets/icons/facebook-small.svg" alt="">
-                             facebook
-                         </a>
-                     </li>
- 
-                     <li class="footer__item">
-                         <a href="" class="footer__link">
-                             <img src="assets/icons/instagram-small.svg" alt="">
-                             instgram
-                         </a>
-                     </li>
- 
-                     <li class="footer__item">
-                         <a href="" class="footer__link">
-                             <img src="assets/icons/tiktok-small.svg" alt="">
-                             tiktok
-                         </a>
-                     </li>
- 
-                     <li class="footer__item">
-                         <a href="" class="footer__link">
-                             <img src="assets/icons/twitter-small.svg" alt="">
-                             twitter
-                         </a>
-                     </li>
-                </ul>
-
-               <div class="footer__form">
-                <h2 class="footer__title">Har du några frågor?</h2>
-
-                <form action="" method="post">
-                    <label for="name">För- & efternamn</label>
-                    <input type="text" name="name" id="name" placeholder="Ditt för- & efternamn...">
-
-                    <label for="email">E-post</label>
-                    <input type="email" name="email" id="email" placeholder="Din e-post...">
-
-                    <label for="textarea">Fråga oss</label>
-                    <textarea name="textarea" id="textarea" rows="6" placeholder="Din fråga..."></textarea>
-
-                    <button class="footer__button">Skicka</button>
-
-                </form>
-           </div>
-
-           <div class="footer__bottom">
-                <span class="footer__copyright">&copy; Copyright 2022 NordCleaning</span>
-           </div>
-
-                
+    
+                    <ul class="footer__list">
+                         <li class="footer__item footer__item-1">
+                             <a href="" class="footer__link">
+                                 <img src="assets/icons/facebook-small.svg" alt="">
+                                 facebook
+                             </a>
+                         </li>
+     
+                         <li class="footer__item footer__item-2">
+                             <a href="" class="footer__link">
+                                 <img src="assets/icons/instagram-small.svg" alt="">
+                                 instagram
+                             </a>
+                         </li>
+     
+                         <li class="footer__item footer__item-3">
+                             <a href="" class="footer__link">
+                                 <img src="assets/icons/tiktok-small.svg" alt="">
+                                 tiktok
+                             </a>
+                         </li>
+     
+                         <li class="footer__item footer__item-4">
+                             <a href="" class="footer__link">
+                                 <img src="assets/icons/twitter-small.svg" alt="">
+                                 twitter
+                             </a>
+                         </li>
+                    </ul>
+    
+                <div class="footer__form">
+                        <h2 class="footer__title">Har du några frågor?</h2>
+                        <form action="" method="post">
+        
+                            <div class="footer__name">
+                                <label for="name">För- & efternamn</label>
+                                <input type="text" name="name" id="name" placeholder="Ditt för- & efternamn..." required>
+                            </div>
+        
+                            <div class="footer__email">
+                                <label for="email">E-post</label>
+                                <input type="email" name="email" id="email" placeholder="Din e-post..." required>
+                            </div>
+        
+                            <div class="footer__textarea">
+                                <label for="textarea">Fråga oss</label>
+                                <textarea name="textarea" id="textarea" rows="6" placeholder="Din fråga..." required></textarea>
+                            </div>
+        
+                            <button href="" class="button footer__button">Skicka</button>
+        
+                        </form>                   
+               </div>
+               
+               <div class="footer__bottom">
+                    <span class="footer__copyright">&copy; Copyright 2022 NordCleaning</span>
+               </div>
+                    
             </div>
-        </footer>
+            </footer>
 
 
     </div>
