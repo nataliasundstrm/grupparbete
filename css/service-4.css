@@ -51,7 +51,7 @@ header{
     color: #84BF9D;
 }
 
-.active {
+.activ {
     color: #84BF9D;
     text-decoration: none;
     font-family: var(--font-sans-serif); 
@@ -60,7 +60,7 @@ header{
     padding-bottom: 0.25rem;  
 }
 
-.active::before {
+.activ::before {
     content: '';
     height: 2px;
     width: 100%;
@@ -141,8 +141,15 @@ color:#11224D;
 .button2:hover {
     background-color: #11224D;
 }
+
 .section1
 .sidebar1 {
+
+{
+
+/* Sidebar */
+
+.background-sidebar {
     background: #FEFEFA;
     color: #84BF9D;
 }
