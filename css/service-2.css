@@ -76,8 +76,13 @@ body{
     display: none;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: minmax(30px, 1fr) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 1fr);
+}
 
-.container{
+.container__inner{
+    grid-column: inner;
     display: grid;
     margin: 20px;
     grid-column-gap: 20px;
@@ -85,6 +90,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: repeat(5, 1fr); */
     padding: 6rem 0 6rem 0;
+    margin: 0;
   }
 
 
