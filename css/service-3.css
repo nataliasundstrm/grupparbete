@@ -1,11 +1,5 @@
 @import "basic-style.css";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
 /* Components */
 .cta-button {
     background-color: var(--color-blue);
@@ -42,6 +36,9 @@
 .form__button {
     background-color: var(--color-blue);
     color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form__button:hover,
@@ -258,8 +255,8 @@ figure {
 }
 
 .buy__text { 
+    max-width: 550px;
     font-weight: 500;
-    max-width: 480px;
     margin: 0 auto;
 }
 
@@ -644,6 +641,35 @@ textarea {
         display: none;
     }
 
+    .about {
+        padding: 3rem 0 0 0;
+    }
+    
+    .buy {
+        padding: 0 0 3rem 0;
+    }
+    .about__title,
+    .about__text,
+    .products__title,
+    .products__text,
+    .buy__content {
+        text-align: start;
+    }
+
+    .about__title,
+    .products__title,
+    .buy__title {
+        padding: 0 0 0.75rem 0;
+    }
+
+    .footer {
+        padding: 3rem 0 3rem 0;
+    }
+
+    .form__button {
+        justify-content: flex-start;
+        margin: 0;
+    }
     .footer__inner {
         grid-template-columns: none;
     }
@@ -660,10 +686,6 @@ textarea {
 
 }
 
-@media (max-width: 400px) {
-
-
-}
 
 
 
