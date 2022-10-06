@@ -20,34 +20,41 @@
 </head>
 <body>
     <div id="container">
-        <header>
+        <header class="header">
             <div class="header__inner">
-                <h1>NordCleaning</h1>
+                <span class="header__logo">
+                    <a href="index.html">NordCleaning</a>
+                </span>
+
+                <button class="menu-button">
+                    <div class="menu-button__hamburger"></div>
+                </button>
                 
                     <ul class="header__list">
 
-                        <li class="header__item item1">
-                            <a class="header-link" href="home-page.html">Hem</a>
+                        <li class="header__item">
+                            <a class="header-link activ" href="index.html">Hem</a>
                         </li>
 
-                        <li class="header__item item2">
+                        <li class="header__item">
                             <a class="header-link" href="service-1.html">Hemstäd</a>
                         </li>
                             
-                        <li class="header__item item3">  
+                        <li class="header__item">  
                             <a class="header-link" href="service-2.html">Flyttstäd</a>
                         </li>
                         
-                        <li class="header__item item4">
+                        <li class="header__item">
                             <a class="header-link" href="service-3.html">Företagsstäd</a>
                         </li>
                     
-                        <li class="header__item item5">
-                            <a class="aktiv" class="header-link" href="service-4.html">Dödsbo och sanering</a>
+                        <li class="header__item">
+                            <a class="header-link" href="service-4.html">Dödsbo & sanering</a>
                         </li>
                     </ul>
             </div>
         </header>
+
 
         <div id="case1">
             <div class="container1">
@@ -59,8 +66,8 @@
             </div>
         </div>
 
-        <aside id="sidebar-info" class="background-sidebar">
-            <div class="image-info1">
+        <aside class="sidebar">
+            <div class="sidebar-info">
                 <img class="sanering3" src="./assets/img/sanering3.png" alt="saneringsbild">
             </div>
             <div class="content-info"><h2>Sanering</h2>
