@@ -14,21 +14,21 @@ header{
 
 .header__inner {
     grid-column: inner;
-    display: grid;
-    grid-auto-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
- h1{
+.header__logo a{
     color: #FEFEFA;
     font-family: var(--font-serif);
     font-size: 40px;
-    grid-column:1/2;
-    margin-top:40px;
+    text-decoration: none;
+    font-weight: 700;
 }
 .header__item {
     display: inline-block;
-    margin: 45px 20px 0 10px;
-    padding-left: 20px;
+    padding-left: 2rem;
     
 }
 .header-link{
@@ -38,22 +38,22 @@ header{
     text-decoration: none;
 }
 .header__list {
-    grid-column: 2/5;
     text-align: right;
     background-position: 100%;
     
     
 }
- a:hover{ 
+.header-link:hover { 
     color: #84BF9D;
 }
-.aktiv{
+
+.activ {
     color: #84BF9D;
     text-decoration: none;
     font-family: var(--font-sans-serif); 
     font-weight: 600;
-    position: relative;
-    
+    position: relative;   
+    padding-bottom: 0.25rem;  
 }
 
 .aktiv::before {
@@ -105,6 +105,7 @@ color:#84BF9D;
     background-color: #84BF9D;
     padding: 20px 15px;
     border: none;
+    border-radius: 30px;
     
 }
 .button2:hover {
@@ -113,7 +114,7 @@ color:#84BF9D;
 /* Sidebar */
 
 .background-sidebar {
-    background: #11224D;
+    background: #FEFEFA;
     color: #84BF9D;
 }
 

@@ -4,50 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dödsbo/sanering</title>
-
+    <title>Startsida</title>
+    
     <!-- Font-sizes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap" rel="stylesheet">
-    
+
     
     <!-- Styles -->
-    <link rel="stylesheet" href="css/service-4.css">
+    <link rel="stylesheet" href="css/home-page.css">
     <link rel="stylesheet" href="css/basic-style.css">
-
-
 </head>
 <body>
     <div id="container">
-        <header>
+
+        <header class="header">
             <div class="header__inner">
-                <h1>NordCleaning</h1>
+                <span class="header__logo">
+                    <a href="index.html">NordCleaning</a>
+                </span>
+
+                <button class="menu-button">
+                    <div class="menu-button__hamburger"></div>
+                </button>
                 
                     <ul class="header__list">
 
-                        <li class="header__item item1">
-                            <a class="header-link" href="home-page.html">Hem</a>
+                        <li class="header__item">
+                            <a  class="header-link" href="index.html">Hem</a>
                         </li>
 
-                        <li class="header__item item2">
+                        <li class="header__item">
                             <a class="header-link" href="service-1.html">Hemstäd</a>
                         </li>
                             
-                        <li class="header__item item3">  
+                        <li class="header__item">  
                             <a class="header-link" href="service-2.html">Flyttstäd</a>
                         </li>
                         
-                        <li class="header__item item4">
+                        <li class="header__item">
                             <a class="header-link" href="service-3.html">Företagsstäd</a>
                         </li>
                     
-                        <li class="header__item item5">
-                            <a class="aktiv" class="header-link" href="service-4.html">Dödsbo och sanering</a>
+                        <li class="header__item">
+                            <a  class="header-link activ" href="service-4.html">Dödsbo & sanering</a>
                         </li>
                     </ul>
             </div>
         </header>
+
+     <div class="section-container">
+
+            <div class="section__inner">
+                <h1 class="section-title">Våra tjänster</h1>
+                <div class="img-container">
+                    <a href="service-1.html"><img src="./assets/img/hemstad.jpg" alt="bild" class="image1"></a>
+                    <a href="service-2.html"><img src="./assets/img/flyttstad.jpg" alt="bild" class="image2"></a>
+                    <a href="service-3.html"><img src="./assets/img/kontorstad.jpg" alt="bild" class="image3"></a>
+                    <a href="service-4.html"><img src="./assets/img/sanering.jpg" alt="bild" class="image4"></a>
+                </div>
+            </div>
+
+        </div>
 
         <div id="case1">
             <div class="container1">
