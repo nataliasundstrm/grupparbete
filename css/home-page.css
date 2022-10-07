@@ -82,7 +82,7 @@ body {
 .hero {
     display: grid;
     grid-template-columns: var(--grid-container);
-    background-color: #11224D;
+    background-color: var(--color-blue);
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -99,7 +99,7 @@ body {
     left: 0;
     right: 0;
     backdrop-filter: blur(1.25px);
-    background-color: rgba(17, 34, 77, 0.1);
+    background-color: rgba(17, 34, 77, 0.2);
     position: absolute;
 }
 
@@ -119,6 +119,7 @@ body {
     color: #FEFEFA;
     max-width: 800px;
     z-index: 1000;
+    text-shadow: rgba(17, 34, 77, 0.2);
 }
 
 .hero__title {
@@ -145,7 +146,7 @@ body {
     text-align: center;
     margin: 0 auto;
     text-decoration: none; 
-    font-size: 1.25rem;
+    font-size: 1rem;
     border: 0;
 
 }
@@ -404,11 +405,6 @@ textarea {
 
     .menu-button__hamburger::after {
         top: 8px;
-    }
-
-    .hero__button {
-        font-size: 1rem;
-    
     }
 
     .hero__title {
