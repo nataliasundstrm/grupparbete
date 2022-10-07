@@ -416,7 +416,7 @@ textarea {
 }
 
 /* Tablets */
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
 
     .header {
         height: 100px;
@@ -574,7 +574,7 @@ textarea {
 
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     .header__logo a {
         font-size: 25.6px;
