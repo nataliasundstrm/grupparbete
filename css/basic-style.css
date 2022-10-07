@@ -16,6 +16,9 @@
     --color-green: #84BF9D;
     --color-white: #FEFEFA;
 
+    /* GRID */
+    --grid-container:  minmax(30px, 1fr) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 1fr);
+
 }
 
 * {
@@ -25,7 +28,7 @@
 }
 
 body {
-    background-color: #FEFEFA;
+    background-color: var(--color-white);
     font-size: 16px;
 }
 
