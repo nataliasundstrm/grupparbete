@@ -1,17 +1,11 @@
 
 @import "basic-style.css";
 
-body{
-    background-color: #FEFEFA;
-    margin: 0;
-    padding: 0;
-}
-
 .header {
     border:1px solid #11224D;
     background-color: #11224D;
     display: grid;
-    grid-template-columns: minmax(30px, 1fr) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 1fr);
+    grid-template-columns: var(--grid-container);
     height: 145px;
 }
 
@@ -52,7 +46,7 @@ body{
     color: #84BF9D;
 }
 
-.activ {
+.active {
     color: #84BF9D;
     text-decoration: none;
     font-family: var(--font-sans-serif); 
@@ -61,7 +55,7 @@ body{
     padding-bottom: 0.25rem;  
 }
 
-.activ::before {
+.active::before {
     content: '';
     height: 2px;
     width: 100%;
@@ -69,6 +63,11 @@ body{
     background: #84BF9D;
     position: absolute;
     
+}
+
+.menu-button,
+.menu-button__hamburger {
+    display: none;
 }
 
 .menu-button,
@@ -107,17 +106,17 @@ img{
   }
 
 
-li,
-.p {
+.container li,
+p {
     font-family: var(--font-sans-serif);
 
 }
 
-ul {
+.container ul {
     margin-bottom: 30px;
 }
 
-li {
+.container li {
     margin-left: 15px;
 }
 
